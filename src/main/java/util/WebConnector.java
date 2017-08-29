@@ -59,8 +59,8 @@ public class WebConnector {
         } else if (browserType.equalsIgnoreCase("ie") && ie != null) {
             driver = ie;
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        //driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     public HomePage openUrl(String url)
@@ -98,6 +98,7 @@ public class WebConnector {
         Assert.fail(failureMessage);
 
     }
+
 
 
 }

@@ -16,9 +16,13 @@ public class StorePage extends BasePage {
 
     public KanoProductPage selectComputerBundle()
     {
+
+        //System.out.println(computer_bundle.getText());
+
         Actions action=new Actions(wcon.driver);
-        //action.moveToElement(computer_bundle).click().perform();
-        action.click(computer_bundle).perform();
+        action.moveToElement(computer_bundle).click().perform();
+        //action.click(computer_bundle).perform();
         return new KanoProductPage();
+
     }
 }

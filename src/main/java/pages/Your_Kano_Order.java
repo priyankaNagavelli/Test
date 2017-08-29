@@ -10,9 +10,18 @@ public class Your_Kano_Order extends BasePage{
     {
         menu=new MenuPage();
     }
+
     @FindBy(xpath=PageConstants.COMPUTER_KIT_YOUR_ORDER)
     WebElement your_order;
 
     @FindBy(xpath=PageConstants.COMPUTER_QUANTITY)
     WebElement quantity;
+
+    public WebElement getYour_order() {
+        return your_order;
+    }
+
+    public WebElement getQuantity() {
+        return quantity;
+    }
 }
